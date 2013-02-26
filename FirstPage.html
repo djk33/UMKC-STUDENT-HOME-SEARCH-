@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1"> 
+     <title>Single page template</title> 
+     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0-beta.1/jquery.mobile-1.3.0-beta.1.min.css" /> 
+  <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.0-beta.1/jquery.mobile-1.3.0-beta.1.min.js"></script>
+
+</head> 
+
+
+<body>
+<div data-role="page" id="page1">
+
+     <div data-role="header">
+          <h1>UMKC STUDENT HOME SEARCH</h1>
+     </div><ul data-role="listview" data-inset="true" data-filter="true">
+</ul>
+<a href="#Register" data-role="button" data-inline="true">Register</button>
+<a href="#Login" data-role="button" data-inline="true">Login</button>	   
+<a><img class="photo" src="Capture.jpg" alt="Paris, France" style="width:100%"></a>
+</div>
+
+<div data-role="page" id="Register">
+
+     <div data-role="header">
+     	  <a data-rel="back" data-icon="home">Home</a>
+          <h1>Register</h1>
+     </div>
+<fieldset class="ui-grid-a">
+<div class="ui-block-b"><p align="center">firstname*</p></div>
+<div class="ui-block-b"><input type="text" name="name" id="basic" value=""  /></div>
+</fieldset>
+<fieldset class="ui-grid-a">
+<div class="ui-block-b"><p align="center">lastname*</p></div>
+<div class="ui-block-b"><input type="text" name="name" id="basic" value=""  /></div>
+</fieldset>
+<fieldset class="ui-grid-a">
+<div class="ui-block-b"><p align="center">Gender*</p></div>
+<div class="ui-block-b">
+<a  href="#popupMenu" data-rel="popup"  data-role="button">Gender</a> <div data-role="popup" id="popupMenu" data-theme="a">
+        <ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="b">
+		<li><a href="">Male</a></li>
+		<li><a href="">Female</a></li>
+	</ul>
+      </div>
+</div>
+</fieldset><fieldset class="ui-grid-a">
+<div class="ui-block-b"><p align="center">Address</p></div>
+<div class="ui-block-b"><input type="text" name="name" id="basic" value=""  /></div>
+</fieldset>
+<fieldset class="ui-grid-a">
+<div class="ui-block-b"></div>
+<div class="ui-block-b"><input type="text" name="name" id="basic" value=""  /></div>
+</fieldset>
+<fieldset class="ui-grid-a">
+<div class="ui-block-b"></div>
+<div class="ui-block-b"><input type="text" name="name" id="basic" value="zip"  /></div>
+</fieldset>
+<fieldset class="ui-grid-a">
+<div class="ui-block-b"><p align="center">Email Address</p></div>
+<div class="ui-block-b"><input type="text" name="name" id="basic" value=""  /></div>
+</fieldset>
+<fieldset class="ui-grid-a">
+<div class="ui-block-b"><p align="center">mobile</p></div>
+<div class="ui-block-b"><input type="text" name="name" id="basic" value=""  /></div>
+</fieldset>
+<div data-role="footer" align="right">
+<button type="submit" data-theme="b">Submit</button>
+<button type="submit" data-theme="b" href="#Register">Clear</button>
+</div>
+
+</div>
+<div data-role="page" id="Login">
+            <div data-theme="b" data-role="header" data-position="fixed">
+                <h2>
+                    StudentLoginPage
+                </h2>
+<a data-rel="back" data-icon="home">Home</a>
+            </div>
+            <div data-role="content">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput1">
+                            Username
+                        </label>
+                        <input name="" id="textinput1" placeholder="" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput2">
+                            Password
+                        </label>
+                        <input name="" id="textinput2" placeholder="" value="" type="password" />
+                    </fieldset>
+                </div>
+                <a data-role="button" data-transition="none" href="#Video" style="width : 20%" data-theme="b">
+                    Login
+                </a>
+            </div>
+            <div data-theme="b" data-role="footer" data-position="fixed">
+                <h3>
+                    Footer
+                </h3>
+            </div>
+        </div>
+<div data-role="page" id="Video">
+            <div data-theme="b" data-role="header" data-position="fixed">
+                <h2>
+                    Login SucessFull
+                </h2>
+<a href="#page1" data-icon="home">Home</a>
+<a data-rel="back" data-icon="back">Back</a>
+            </div>
+	    <a href="#popupVideo" data-rel="popup" data-role="button" data-theme="b" >video player</a>
+<div data-role="popup" id="popupVideo" data-overlay-theme="a" data-theme="d" data-tolerance="15,15" class="ui-content">
+<iframe src="http://player.vimeo.com/video/41135183?portrait=0" width="497" height="298" seamless></iframe>
+</div>
+</div>
+</body>
+</html>
